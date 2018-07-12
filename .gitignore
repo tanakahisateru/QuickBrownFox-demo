@@ -1,0 +1,7 @@
+composer.phar
+composer.lock
+/vendor/
+
+/tests-cept/_support/_generated/*
+/tests-cept/_output/*
+!/tests-cept/_output/.gitkeep

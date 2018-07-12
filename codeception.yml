@@ -1,0 +1,16 @@
+paths:
+    tests: tests-cept
+    output: tests-cept/_output
+    data: tests-cept/_data
+    support: tests-cept/_support
+    envs: tests-cept/_envs
+actor_suffix: Tester
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
+modules:
+    config:
+        \Helper\QuickBrownFox:
+          dsn: 'mysql:host=127.0.0.1;dbname=qbf_demo'
+          user: 'root'
+          password: 'rootpass'
