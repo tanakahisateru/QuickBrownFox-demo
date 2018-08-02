@@ -1,6 +1,6 @@
 version: '3'
 services:
-  db:
+  mysql:
     image: mysql:5
     # volumes:
     #   - ./data:/var/lib/mysql
@@ -10,3 +10,13 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: rootpass
       MYSQL_DATABASE: qbf_demo
+  postgres:
+    image: postgres:10
+    # volumes:
+    #   - ./data:/var/lib/postgresql
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: postgrespass
+      POSTGRES_DB: qbf_demo
